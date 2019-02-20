@@ -10,10 +10,39 @@
     <h2>Aula de Formulários</h2>
     <form action="" method="POST">
         <label>Nome do Usuário:</label><br/>
-        <input type="text" maxlength="10" name="user"/><br/>
+        <input type="text" 
+               maxlength="10"
+               name="user"
+               placeholder="Digite seu nome aqui"
+               required/><br/><br/>
         <label>Senha:</label><br/>
-        <input type="password" maxlength="3" name="pass"/>
-        <br/>
+        <input type="password"
+               maxlength="3"
+               name="pass"
+               required/> <br/><br/>
+        <label>Testando numero</label> <br/>
+        <input type="number" 
+               min="5"
+               max="10"/> <br/><br/>
+        Mensagem: <br/>
+        <textarea>Digite seu texto aqui</textarea>
+        <br/><br/>
+        Selecione a sua UF: <br/>
+        <select name="UF">
+            <option name=""></option>
+            <option name="SP">São Paulo</option>
+            <option name="RJ">Rio de Janeiro</option>
+        </select> <br/><br/>
+        Disciplinas em check: <br/>
+        <input type="checkbox" name="disciplinas" value="DevOps">DevOps <br/>
+        <input type="checkbox" name="disciplinas" value="LPII">LPII
+        <br/> <br/>
+        Disciplinas em radio: <br/>
+        <input type="radio" name="disciplinas" value="DevOps">DevOps <br/>
+        <input type="radio" name="disciplinas" value="LPII">LPII
+        <br/> <br/>
+        <input type="email" name="email" id="teste"/> <br/>
+        <br/><br/><br/>
         <input type="submit"/>
     </form>
 </body>
